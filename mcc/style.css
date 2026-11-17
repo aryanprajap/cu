@@ -1,0 +1,78 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Carousel */
+.banner {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.carousel-caption {
+    bottom: 100px;
+}
+
+.carousel-caption h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Food Cards */
+.food-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-card .card-body {
+    padding: 20px;
+}
+
+.price {
+    color: #dc3545;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.add-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+}
+
+.add-btn:hover {
+    background: #bb2d3b;
+    color: white;
+}
+
+.filter-btn {
+    margin: 5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .banner {
+        height: 250px;
+    }
+
+    .carousel-caption {
+        bottom: 30px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 25px;
+    }
+}
